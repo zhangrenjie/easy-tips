@@ -4,7 +4,7 @@ namespace singleton;
 /**
  * 单例
  */
-class Singleton
+final class Singleton
 {
   /**
    * 自身实例
@@ -29,7 +29,7 @@ class Singleton
    * 
    * @return string
    */
-  public function __clone()
+  private function __clone()
   {
     echo 'clone is forbidden';
   }
